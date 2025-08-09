@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		4EEA30F62E476E3600BEEF79 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 4EEA30F52E476E3600BEEF79 /* SnapKit */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		4EEA30A62E4762DD00BEEF79 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -65,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EEA30F62E476E3600BEEF79 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +130,7 @@
 			);
 			name = "SeSAC-Assignment-31";
 			packageProductDependencies = (
+				4EEA30F52E476E3600BEEF79 /* SnapKit */,
 			);
 			productName = "SeSAC-Assignment-31";
 			productReference = 4EEA308F2E4762DB00BEEF79 /* SeSAC-Assignment-31.app */;
@@ -208,6 +214,9 @@
 			);
 			mainGroup = 4EEA30862E4762DB00BEEF79;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				4EEA30F42E476E3600BEEF79 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 4EEA30902E4762DB00BEEF79 /* Products */;
 			projectDirPath = "";
@@ -573,6 +582,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4EEA30F42E476E3600BEEF79 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4EEA30F52E476E3600BEEF79 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4EEA30F42E476E3600BEEF79 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4EEA30872E4762DB00BEEF79 /* Project object */;
 }
