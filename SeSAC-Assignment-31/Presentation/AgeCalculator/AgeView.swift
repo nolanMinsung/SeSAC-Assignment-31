@@ -26,11 +26,10 @@ final class AgeView: UIView {
     }()
     let label: UILabel = {
         let label = UILabel()
-        label.text = "여기에 결과를 보여주세요"
+        label.text = "당신의 나이는 ??살입니다."
         label.textAlignment = .center
         return label
     }()
-    
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -46,6 +45,7 @@ final class AgeView: UIView {
 }
 
 
+// Initial Settings
 extension AgeView {
     
     func configureHierarchy() {
