@@ -7,7 +7,7 @@
 
 import Foundation
 
-// 로직을 별도 분리
+/// 나이 입력값 검증을 담당.
 enum AgeValidationUtility {
     
     enum AgeValidationError: LocalizedError {

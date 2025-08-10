@@ -10,18 +10,19 @@ import Foundation
 
 class AgeViewModel {
     
+    // Input Stream
     let resultButtonTapped: PassthroughSubject<String, Never> = .init()
     
+    // Output Stream
     private let ageCalculationOutPutSubject: PassthroughSubject<Int, Never> = .init()
     var ageCalculationOutPut: AnyPublisher<Int, Never> {
-        ageCalculationOutPutSubject.eraseToAnyPublisher()
+        return ageCalculationOutPutSubject.eraseToAnyPublisher()
     }
     
     private let ageCalculationErrorSubject: PassthroughSubject<AgeValidationUtility.AgeValidationError, Never> = .init()
     var ageCalculationError: AnyPublisher<AgeValidationUtility.AgeValidationError, Never> {
-        ageCalculationErrorSubject.eraseToAnyPublisher()
+        return ageCalculationErrorSubject.eraseToAnyPublisher()
     }
-    
     
     private var cancellables: Set<AnyCancellable> = []
     

@@ -10,10 +10,10 @@ import UIKit
 
 class AgeViewController: UIViewController {
     
-    let rootView = AgeView()
-    let viewModel = AgeViewModel()
+    private let rootView = AgeView()
+    private let viewModel = AgeViewModel()
     
-    var cancellables = Set<AnyCancellable>()
+    private var cancellables = Set<AnyCancellable>()
     
     override func loadView() {
         view = rootView
