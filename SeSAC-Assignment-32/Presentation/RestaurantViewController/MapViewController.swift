@@ -12,12 +12,19 @@ import SnapKit
 class MapViewController: UIViewController {
      
     private let mapView = MKMapView()
+    private let viewModel = RestaurantViewModel()
      
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
         setupMapView()
         addSeoulStationAnnotation()
+        viewModel.annotationsOutput.subscribe { [weak self] annotations in
+            guard let self else { return }
+            self.mapView.removeAnnotations(self.mapView.annotations)
+            self.mapView.addAnnotations(annotations)
+            self.mapView.showAnnotations(annotations, animated: true)
+        }
     }
      
     private func setupUI() {
@@ -67,16 +74,39 @@ class MapViewController: UIViewController {
             preferredStyle: .actionSheet
         )
         
-        let alert1Action = UIAlertAction(title: "얼럿 1", style: .default) { _ in
-            print("얼럿 1이 선택되었습니다.")
+        let alert1Action = UIAlertAction(title: "한식", style: .default) { [weak self] alert in
+            print("\(alert.title ?? "(카테고리 알 수 없음)")이(가) 선택되었습니다.")
+            self?.viewModel.categorySelectInput.value = .korean
         }
         
-        let alert2Action = UIAlertAction(title: "얼럿 2", style: .default) { _ in
-            print("얼럿 2가 선택되었습니다.")
+        let alert2Action = UIAlertAction(title: "카페", style: .default) { [weak self] alert in
+            print("\(alert.title ?? "(카테고리 알 수 없음)")이(가) 선택되었습니다.")
+            self?.viewModel.categorySelectInput.value = .cafe
         }
         
-        let alert3Action = UIAlertAction(title: "얼럿 3", style: .default) { _ in
-            print("얼럿 3이 선택되었습니다.")
+        let alert3Action = UIAlertAction(title: "중식", style: .default) { [weak self] alert in
+            print("\(alert.title ?? "(카테고리 알 수 없음)")이(가) 선택되었습니다.")
+            self?.viewModel.categorySelectInput.value = .chinese
+        }
+        
+        let alert4Action = UIAlertAction(title: "일식", style: .default) { [weak self] alert in
+            print("\(alert.title ?? "(카테고리 알 수 없음)")이(가) 선택되었습니다.")
+            self?.viewModel.categorySelectInput.value = .japanese
+        }
+        
+        let alert5Action = UIAlertAction(title: "분식", style: .default) { [weak self] alert in
+            print("\(alert.title ?? "(카테고리 알 수 없음)")이(가) 선택되었습니다.")
+            self?.viewModel.categorySelectInput.value = .bunsik
+        }
+        
+        let alert6Action = UIAlertAction(title: "경양식", style: .default) { [weak self] alert in
+            print("\(alert.title ?? "(카테고리 알 수 없음)")이(가) 선택되었습니다.")
+            self?.viewModel.categorySelectInput.value = .kyeongYang
+        }
+        
+        let alert7Action = UIAlertAction(title: "양식", style: .default) { [weak self] alert in
+            print("\(alert.title ?? "(카테고리 알 수 없음)")이(가) 선택되었습니다.")
+            self?.viewModel.categorySelectInput.value = .western
         }
         
         let cancelAction = UIAlertAction(title: "취소", style: .cancel) { _ in
@@ -86,6 +116,10 @@ class MapViewController: UIViewController {
         alertController.addAction(alert1Action)
         alertController.addAction(alert2Action)
         alertController.addAction(alert3Action)
+        alertController.addAction(alert4Action)
+        alertController.addAction(alert5Action)
+        alertController.addAction(alert6Action)
+        alertController.addAction(alert7Action)
         alertController.addAction(cancelAction)
          
         present(alertController, animated: true, completion: nil)

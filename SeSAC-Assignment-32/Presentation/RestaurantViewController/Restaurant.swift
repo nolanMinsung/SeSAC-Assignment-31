@@ -8,6 +8,17 @@
 
 import Foundation
 
+enum RestaurantCategory: String, CaseIterable {
+    case korean = "한식"
+    case cafe = "카페"
+    case chinese = "중식"
+    case japanese = "일식"
+    case bunsik = "분식"
+    case kyeongYang = "경양식"
+    case western = "양식"
+    case all = "전체"
+}
+
 struct Restaurant {
     let image: String
     let latitude: Double
