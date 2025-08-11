@@ -27,11 +27,20 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let birthdayVC = BirthdayViewController()
         birthdayVC.tabBarItem = UITabBarItem(title: "생년월일", image: UIImage(systemName: "calendar"), tag: 2)
         let currencyVC = CurrencyViewController()
-        currencyVC.tabBarItem = UITabBarItem(title: "환율", image: UIImage(systemName: "dollarsign.arrow.trianglehead.counterclockwise.rotate.90"), tag: 2)
+        currencyVC.tabBarItem = UITabBarItem(title: "환율", image: UIImage(systemName: "dollarsign.arrow.trianglehead.counterclockwise.rotate.90"), tag: 3)
         let wordCounterVC = WordCounterViewController()
-        wordCounterVC.tabBarItem = UITabBarItem(title: "글자 수 계산", image: UIImage(systemName: "text.word.spacing"), tag: 2)
+        wordCounterVC.tabBarItem = UITabBarItem(title: "글자 수 계산", image: UIImage(systemName: "text.word.spacing"), tag: 4)
+        let restaurantVC = MapViewController()
+        restaurantVC.tabBarItem = UITabBarItem(title: "식당 지도", image: UIImage(systemName: "map"), tag: 5)
         
-        tabBarController.viewControllers = [ageVC, bmiVC, birthdayVC, currencyVC, wordCounterVC]
+        tabBarController.viewControllers = [
+            ageVC,
+            bmiVC,
+            birthdayVC,
+            currencyVC,
+            wordCounterVC,
+            restaurantVC
+        ]
         tabBarController.tabBar.tintColor = .systemBlue
         tabBarController.tabBar.unselectedItemTintColor = .systemGray
         
