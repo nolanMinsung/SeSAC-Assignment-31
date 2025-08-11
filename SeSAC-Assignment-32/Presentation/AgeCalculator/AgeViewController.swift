@@ -5,15 +5,12 @@
 //  Created by Finn on 8/7/25.
 //
 
-import Combine
 import UIKit
 
 class AgeViewController: UIViewController {
     
     private let rootView = AgeView()
     private let viewModel = AgeViewModel()
-    
-    private var cancellables = Set<AnyCancellable>()
     
     override func loadView() {
         view = rootView
@@ -32,19 +29,18 @@ class AgeViewController: UIViewController {
     
     @objc func resultButtonTapped() {
         view.endEditing(true)
-        
-        viewModel.resultButtonTapped.send(rootView.textField.text!)
+        viewModel.resultButtonTapped.value = rootView.textField.text!
     }
     
     /// viewModel의 ouput 이벤트를 구독
     private func setupSubscriptions() {
-        viewModel.ageCalculationOutPut.sink { [weak self] validAge in
+        viewModel.ageCalculationOutput.subscribe { [weak self] validAge in
             self?.rootView.label.text = "당신의 나이는 \(validAge)입니다."
-        }.store(in: &cancellables)
+        }
         
-        viewModel.ageCalculationError.sink { [weak self] ageValidationError in
+        viewModel.ageCalculationError.subscribe { [weak self] ageValidationError in
             self?.rootView.label.text = ageValidationError.localizedDescription
-        }.store(in: &cancellables)
+        }
     }
     
 }
