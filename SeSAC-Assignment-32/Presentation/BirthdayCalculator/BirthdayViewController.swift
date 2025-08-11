@@ -5,16 +5,12 @@
 //  Created by Finn on 8/7/25.
 //
 
-import Combine
 import UIKit
-import SnapKit
 
 class BirthdayViewController: UIViewController {
     
     private let rootView = BirthdayView()
     private let viewModel = BirthdayViewModel()
-    
-    private var cancellables: Set<AnyCancellable> = []
     
     override func loadView() {
         view = rootView
@@ -38,11 +34,11 @@ class BirthdayViewController: UIViewController {
         let monthInput = rootView.monthTextField.text!
         let dayInput = rootView.dayTextField.text!
         
-        viewModel.resultButtonTapped.send((yearInput, monthInput, dayInput))
+        viewModel.resultButtonTapped.value = (yearInput, monthInput, dayInput)
     }
     
     private func setupSubscriptions() {
-        viewModel.birthdayCountingOutput.sink { [weak self] result in
+        viewModel.birthdayCountOutput.subscribe { [weak self] result in
             switch result {
             case .success(let dateDiffToBithday):
                 if dateDiffToBithday < 0 {
@@ -55,7 +51,7 @@ class BirthdayViewController: UIViewController {
             case .failure(let error):
                 self?.rootView.resultLabel.text = error.localizedDescription
             }
-        }.store(in: &cancellables)
+        }
     }
     
 }
