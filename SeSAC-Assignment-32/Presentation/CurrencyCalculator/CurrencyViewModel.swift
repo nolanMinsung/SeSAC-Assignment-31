@@ -5,7 +5,6 @@
 //  Created by 김민성 on 8/11/25.
 //
 
-import Combine
 import Foundation
 
 final class CurrencyViewModel {
@@ -24,36 +23,26 @@ final class CurrencyViewModel {
         }
     }
     
-    let convertButtonTapped = PassthroughSubject<String, Never>()
+    let convertButtonTapped = MSSubject<String>(value: "")
     
-    private let convertOutputSubject = PassthroughSubject<Double, Never>()
-    private let convertErrorSubject = PassthroughSubject<CurrencyError, Never>()
-    
-    var convertOutput: AnyPublisher<Double, Never> {
-        return convertOutputSubject.eraseToAnyPublisher()
-    }
-    
-    var convertError: AnyPublisher<CurrencyError, Never> {
-        return convertErrorSubject.eraseToAnyPublisher()
-    }
-    
-    private var cancellables: Set<AnyCancellable> = []
+    let convertOutput = MSSubject<Double>(value: 0.0)
+    let convertError = MSSubject<CurrencyError>(value: .emptyInput)
     
     init() {
-        convertButtonTapped.sink { [weak self] inputValue in
+        convertButtonTapped.subscribe { [weak self] inputValue in
             guard !inputValue.isEmpty else {
-                self?.convertErrorSubject.send(.emptyInput)
+                self?.convertError.value = .emptyInput
                 return
             }
             guard let amount = Double(inputValue) else {
-                self?.convertErrorSubject.send(.notANumber)
+                self?.convertError.value = .notANumber
                 return
             }
             
             let exchangeRate = 1350.0 // 실제 환율 데이터로 대체 필요
             let convertedAmount = amount / exchangeRate
-            self?.convertOutputSubject.send(convertedAmount)
-        }.store(in: &cancellables)
+            self?.convertOutput.value = convertedAmount
+        }
     }
     
 }
