@@ -38,15 +38,15 @@ class WordCounterViewController: UIViewController {
     }
     
     private func setupSubscriptions() {
-        viewModel.textViewTextCountOutput.sink { [weak self] textCount in
+        viewModel.textViewTextCountOutput.subscribe { [weak self] textCount in
             self?.rootView.countLabel.text = "현재까지 \(textCount)글자 작성중"
-        }.store(in: &cancellables)
+        }
     }
 }
  
 extension WordCounterViewController: UITextViewDelegate {
     func textViewDidChange(_ textView: UITextView) {
-        viewModel.textViewDidChange.send(textView.text)
+        viewModel.textViewDidChange.value = textView.text
     }
     
 }

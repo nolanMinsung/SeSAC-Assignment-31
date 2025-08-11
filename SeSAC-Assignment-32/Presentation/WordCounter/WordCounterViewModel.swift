@@ -5,24 +5,18 @@
 //  Created by 김민성 on 8/11/25.
 //
 
-import Combine
 import Foundation
 
 final class WordCounterViewModel {
     
-    let textViewDidChange = PassthroughSubject<String, Never>()
+    let textViewDidChange = MSSubject<String>(value: "")
     
-    private let textViewTextCountOutputSubject = PassthroughSubject<Int, Never>()
-    var textViewTextCountOutput: AnyPublisher<Int, Never> {
-        textViewTextCountOutputSubject.eraseToAnyPublisher()
-    }
-    
-    private var cancellables: Set<AnyCancellable> = []
+    let textViewTextCountOutput = MSSubject<Int>(value: 0)
     
     init() {
-        textViewDidChange.sink { [weak self] currentString in
-            self?.textViewTextCountOutputSubject.send(currentString.count)
-        }.store(in: &cancellables)
+        textViewDidChange.subscribe { [weak self] currentString in
+            self?.textViewTextCountOutput.value = currentString.count
+        }
     }
     
 }
