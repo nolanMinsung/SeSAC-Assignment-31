@@ -1,13 +1,13 @@
 //
-//  SeSAC_Assignment_31UITestsLaunchTests.swift
-//  SeSAC-Assignment-31UITests
+//  SeSAC_Assignment_32UITestsLaunchTests.swift
+//  SeSAC-Assignment-32UITests
 //
 //  Created by 김민성 on 8/9/25.
 //
 
 import XCTest
 
-final class SeSAC_Assignment_31UITestsLaunchTests: XCTestCase {
+final class SeSAC_Assignment_32UITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

@@ -28,38 +28,38 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4EEA308F2E4762DB00BEEF79 /* SeSAC-Assignment-31.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SeSAC-Assignment-31.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4EEA30A52E4762DD00BEEF79 /* SeSAC-Assignment-31Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SeSAC-Assignment-31Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4EEA30AF2E4762DD00BEEF79 /* SeSAC-Assignment-31UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SeSAC-Assignment-31UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EEA308F2E4762DB00BEEF79 /* SeSAC-Assignment-32.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SeSAC-Assignment-32.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EEA30A52E4762DD00BEEF79 /* SeSAC-Assignment-32Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SeSAC-Assignment-32Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EEA30AF2E4762DD00BEEF79 /* SeSAC-Assignment-32UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SeSAC-Assignment-32UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		4EEA30B72E4762DD00BEEF79 /* Exceptions for "SeSAC-Assignment-31" folder in "SeSAC-Assignment-31" target */ = {
+		4EC9E58F2E49CBDC007ECD86 /* Exceptions for "SeSAC-Assignment-32" folder in "SeSAC-Assignment-32" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
 			);
-			target = 4EEA308E2E4762DB00BEEF79 /* SeSAC-Assignment-31 */;
+			target = 4EEA308E2E4762DB00BEEF79 /* SeSAC-Assignment-32 */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		4EEA30912E4762DB00BEEF79 /* SeSAC-Assignment-31 */ = {
+		4EEA30912E4762DB00BEEF79 /* SeSAC-Assignment-32 */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				4EEA30B72E4762DD00BEEF79 /* Exceptions for "SeSAC-Assignment-31" folder in "SeSAC-Assignment-31" target */,
+				4EC9E58F2E49CBDC007ECD86 /* Exceptions for "SeSAC-Assignment-32" folder in "SeSAC-Assignment-32" target */,
 			);
-			path = "SeSAC-Assignment-31";
+			path = "SeSAC-Assignment-32";
 			sourceTree = "<group>";
 		};
-		4EEA30A82E4762DD00BEEF79 /* SeSAC-Assignment-31Tests */ = {
+		4EEA30A82E4762DD00BEEF79 /* SeSAC-Assignment-32Tests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "SeSAC-Assignment-31Tests";
+			path = "SeSAC-Assignment-32Tests";
 			sourceTree = "<group>";
 		};
-		4EEA30B22E4762DD00BEEF79 /* SeSAC-Assignment-31UITests */ = {
+		4EEA30B22E4762DD00BEEF79 /* SeSAC-Assignment-32UITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "SeSAC-Assignment-31UITests";
+			path = "SeSAC-Assignment-32UITests";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -93,9 +93,9 @@
 		4EEA30862E4762DB00BEEF79 = {
 			isa = PBXGroup;
 			children = (
-				4EEA30912E4762DB00BEEF79 /* SeSAC-Assignment-31 */,
-				4EEA30A82E4762DD00BEEF79 /* SeSAC-Assignment-31Tests */,
-				4EEA30B22E4762DD00BEEF79 /* SeSAC-Assignment-31UITests */,
+				4EEA30912E4762DB00BEEF79 /* SeSAC-Assignment-32 */,
+				4EEA30A82E4762DD00BEEF79 /* SeSAC-Assignment-32Tests */,
+				4EEA30B22E4762DD00BEEF79 /* SeSAC-Assignment-32UITests */,
 				4EEA30902E4762DB00BEEF79 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -103,9 +103,9 @@
 		4EEA30902E4762DB00BEEF79 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4EEA308F2E4762DB00BEEF79 /* SeSAC-Assignment-31.app */,
-				4EEA30A52E4762DD00BEEF79 /* SeSAC-Assignment-31Tests.xctest */,
-				4EEA30AF2E4762DD00BEEF79 /* SeSAC-Assignment-31UITests.xctest */,
+				4EEA308F2E4762DB00BEEF79 /* SeSAC-Assignment-32.app */,
+				4EEA30A52E4762DD00BEEF79 /* SeSAC-Assignment-32Tests.xctest */,
+				4EEA30AF2E4762DD00BEEF79 /* SeSAC-Assignment-32UITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -113,9 +113,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4EEA308E2E4762DB00BEEF79 /* SeSAC-Assignment-31 */ = {
+		4EEA308E2E4762DB00BEEF79 /* SeSAC-Assignment-32 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4EEA30B82E4762DD00BEEF79 /* Build configuration list for PBXNativeTarget "SeSAC-Assignment-31" */;
+			buildConfigurationList = 4EEA30B82E4762DD00BEEF79 /* Build configuration list for PBXNativeTarget "SeSAC-Assignment-32" */;
 			buildPhases = (
 				4EEA308B2E4762DB00BEEF79 /* Sources */,
 				4EEA308C2E4762DB00BEEF79 /* Frameworks */,
@@ -126,19 +126,19 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				4EEA30912E4762DB00BEEF79 /* SeSAC-Assignment-31 */,
+				4EEA30912E4762DB00BEEF79 /* SeSAC-Assignment-32 */,
 			);
-			name = "SeSAC-Assignment-31";
+			name = "SeSAC-Assignment-32";
 			packageProductDependencies = (
 				4EEA30F52E476E3600BEEF79 /* SnapKit */,
 			);
 			productName = "SeSAC-Assignment-31";
-			productReference = 4EEA308F2E4762DB00BEEF79 /* SeSAC-Assignment-31.app */;
+			productReference = 4EEA308F2E4762DB00BEEF79 /* SeSAC-Assignment-32.app */;
 			productType = "com.apple.product-type.application";
 		};
-		4EEA30A42E4762DD00BEEF79 /* SeSAC-Assignment-31Tests */ = {
+		4EEA30A42E4762DD00BEEF79 /* SeSAC-Assignment-32Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4EEA30BD2E4762DD00BEEF79 /* Build configuration list for PBXNativeTarget "SeSAC-Assignment-31Tests" */;
+			buildConfigurationList = 4EEA30BD2E4762DD00BEEF79 /* Build configuration list for PBXNativeTarget "SeSAC-Assignment-32Tests" */;
 			buildPhases = (
 				4EEA30A12E4762DD00BEEF79 /* Sources */,
 				4EEA30A22E4762DD00BEEF79 /* Frameworks */,
@@ -150,18 +150,18 @@
 				4EEA30A72E4762DD00BEEF79 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				4EEA30A82E4762DD00BEEF79 /* SeSAC-Assignment-31Tests */,
+				4EEA30A82E4762DD00BEEF79 /* SeSAC-Assignment-32Tests */,
 			);
-			name = "SeSAC-Assignment-31Tests";
+			name = "SeSAC-Assignment-32Tests";
 			packageProductDependencies = (
 			);
 			productName = "SeSAC-Assignment-31Tests";
-			productReference = 4EEA30A52E4762DD00BEEF79 /* SeSAC-Assignment-31Tests.xctest */;
+			productReference = 4EEA30A52E4762DD00BEEF79 /* SeSAC-Assignment-32Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		4EEA30AE2E4762DD00BEEF79 /* SeSAC-Assignment-31UITests */ = {
+		4EEA30AE2E4762DD00BEEF79 /* SeSAC-Assignment-32UITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4EEA30C02E4762DD00BEEF79 /* Build configuration list for PBXNativeTarget "SeSAC-Assignment-31UITests" */;
+			buildConfigurationList = 4EEA30C02E4762DD00BEEF79 /* Build configuration list for PBXNativeTarget "SeSAC-Assignment-32UITests" */;
 			buildPhases = (
 				4EEA30AB2E4762DD00BEEF79 /* Sources */,
 				4EEA30AC2E4762DD00BEEF79 /* Frameworks */,
@@ -173,13 +173,13 @@
 				4EEA30B12E4762DD00BEEF79 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				4EEA30B22E4762DD00BEEF79 /* SeSAC-Assignment-31UITests */,
+				4EEA30B22E4762DD00BEEF79 /* SeSAC-Assignment-32UITests */,
 			);
-			name = "SeSAC-Assignment-31UITests";
+			name = "SeSAC-Assignment-32UITests";
 			packageProductDependencies = (
 			);
 			productName = "SeSAC-Assignment-31UITests";
-			productReference = 4EEA30AF2E4762DD00BEEF79 /* SeSAC-Assignment-31UITests.xctest */;
+			productReference = 4EEA30AF2E4762DD00BEEF79 /* SeSAC-Assignment-32UITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -205,7 +205,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 4EEA308A2E4762DB00BEEF79 /* Build configuration list for PBXProject "SeSAC-Assignment-31" */;
+			buildConfigurationList = 4EEA308A2E4762DB00BEEF79 /* Build configuration list for PBXProject "SeSAC-Assignment-32" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -222,9 +222,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4EEA308E2E4762DB00BEEF79 /* SeSAC-Assignment-31 */,
-				4EEA30A42E4762DD00BEEF79 /* SeSAC-Assignment-31Tests */,
-				4EEA30AE2E4762DD00BEEF79 /* SeSAC-Assignment-31UITests */,
+				4EEA308E2E4762DB00BEEF79 /* SeSAC-Assignment-32 */,
+				4EEA30A42E4762DD00BEEF79 /* SeSAC-Assignment-32Tests */,
+				4EEA30AE2E4762DD00BEEF79 /* SeSAC-Assignment-32UITests */,
 			);
 		};
 /* End PBXProject section */
@@ -280,12 +280,12 @@
 /* Begin PBXTargetDependency section */
 		4EEA30A72E4762DD00BEEF79 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 4EEA308E2E4762DB00BEEF79 /* SeSAC-Assignment-31 */;
+			target = 4EEA308E2E4762DB00BEEF79 /* SeSAC-Assignment-32 */;
 			targetProxy = 4EEA30A62E4762DD00BEEF79 /* PBXContainerItemProxy */;
 		};
 		4EEA30B12E4762DD00BEEF79 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 4EEA308E2E4762DB00BEEF79 /* SeSAC-Assignment-31 */;
+			target = 4EEA308E2E4762DB00BEEF79 /* SeSAC-Assignment-32 */;
 			targetProxy = 4EEA30B02E4762DD00BEEF79 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -296,11 +296,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 548W892M42;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "SeSAC-Assignment-31/Info.plist";
+				INFOPLIST_FILE = "SeSAC-Assignment-32/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "김민성";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -314,6 +315,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.minsung.SeSAC-Assignment-31";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -325,11 +327,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 548W892M42;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "SeSAC-Assignment-31/Info.plist";
+				INFOPLIST_FILE = "SeSAC-Assignment-32/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "김민성";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -343,6 +346,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.minsung.SeSAC-Assignment-31";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -485,7 +489,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SeSAC-Assignment-31.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SeSAC-Assignment-31";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SeSAC-Assignment-32.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SeSAC-Assignment-32";
 			};
 			name = Debug;
 		};
@@ -504,7 +508,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SeSAC-Assignment-31.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SeSAC-Assignment-31";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SeSAC-Assignment-32.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SeSAC-Assignment-32";
 			};
 			name = Release;
 		};
@@ -545,7 +549,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4EEA308A2E4762DB00BEEF79 /* Build configuration list for PBXProject "SeSAC-Assignment-31" */ = {
+		4EEA308A2E4762DB00BEEF79 /* Build configuration list for PBXProject "SeSAC-Assignment-32" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4EEA30BB2E4762DD00BEEF79 /* Debug */,
@@ -554,7 +558,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4EEA30B82E4762DD00BEEF79 /* Build configuration list for PBXNativeTarget "SeSAC-Assignment-31" */ = {
+		4EEA30B82E4762DD00BEEF79 /* Build configuration list for PBXNativeTarget "SeSAC-Assignment-32" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4EEA30B92E4762DD00BEEF79 /* Debug */,
@@ -563,7 +567,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4EEA30BD2E4762DD00BEEF79 /* Build configuration list for PBXNativeTarget "SeSAC-Assignment-31Tests" */ = {
+		4EEA30BD2E4762DD00BEEF79 /* Build configuration list for PBXNativeTarget "SeSAC-Assignment-32Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4EEA30BE2E4762DD00BEEF79 /* Debug */,
@@ -572,7 +576,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4EEA30C02E4762DD00BEEF79 /* Build configuration list for PBXNativeTarget "SeSAC-Assignment-31UITests" */ = {
+		4EEA30C02E4762DD00BEEF79 /* Build configuration list for PBXNativeTarget "SeSAC-Assignment-32UITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4EEA30C12E4762DD00BEEF79 /* Debug */,
